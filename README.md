@@ -26,7 +26,6 @@ Install-Package Microsoft.EntityFrameworkCore.InMemory
 Install-Package IdentityServer4
 Install-Package Microsoft.AspNetCore.Authentication.JwtBearer
 ```
-
 <img src="/pictures/identity_server_call.png" title="identity server call"  width="600">
 <img src="/pictures/get_access_token_call.png" title="get access token call"  width="600">
 <img src="/pictures/get_access_token_call2.png" title="get access token call logs"  width="600">
@@ -34,3 +33,16 @@ Install-Package Microsoft.AspNetCore.Authentication.JwtBearer
 <img src="/pictures/jwt.png" title="jwt"  width="600">
 <img src="/pictures/get_movies_unauthorized.png" title="jwt"  width="401 unauthorized">
 
+### Steps for getting movies
+- Get a token
+```
+POST https://localhost:5005/connect/token
+```
+<img src="/pictures/get_token.png" title="jwt"  width="get token">
+
+- Copy the token
+
+- Insert the bearer token
+<img src="/pictures/bearer_token.png" title="jwt"  width="bearer token">
+
+- Send the request
